@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>DOM Manipulation jQuery vs AngularJS</title>
+	</head>
+	<body ng-app="domDemo" ng-controller="PersonController">
+		<table>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>First Name</th>
+					<th>Second Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="person in people">
+					<td>{{ person.id }}</td>
+					<td>{{ person.firstName }}</td>
+					<td>{{ person.lastName }}</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		<script src="angular-sample.js"></script>
+	</body>
+</html>

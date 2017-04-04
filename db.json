@@ -1,0 +1,29 @@
+{
+	"people": [
+		{
+			"id": 1,
+			"firstName": "Roll",
+			"lastName": "Fizzlebeef"
+		},
+		{
+			"id": 2,
+			"firstName": "Lump",
+			"lastName": "Beefbroth"
+		},
+		{
+			"id": 3,
+			"firstName": "Hack",
+			"lastName": "Blowfist"
+		},
+		{
+			"id": 4,
+			"firstName": "Gristle",
+			"lastName": "McThornbody"
+		},
+		{
+			"id": 5,
+			"firstName": "Crud",
+			"lastName": "Bonemeal"
+		}
+	]
+}
