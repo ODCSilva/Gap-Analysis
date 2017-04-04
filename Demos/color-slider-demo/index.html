@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Color Slider AngularJS</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body ng-app="" ng-model="color">
+	<div class="color-div" ng-init="color.r='255';color.g='255';color.b='255'" style="background-color: rgb({{ color.r }}, {{ color.g }}, {{ color.b }})">
+		<div class="slider-div">
+			<p>
+				<label for="red">R</label>
+				<input type="range" id="red" ng-model="color.r" min="0" max="255"/>
+				<input type="text" ng-model="color.r" value="{{ color.r }}" size="3"/>
+			</p>
+			<p>
+				<label for="green">G</label>
+				<input type="range" id="green" ng-model="color.g" min="0" max="255"/>
+				<input type="text" ng-model="color.g" value="{{ color.g }}" size="3"/>
+			</p>
+			<p>
+				<label for="blue">B</label>
+				<input type="range" id="blue" ng-model="color.b" min="0" max="255"/>
+				<input type="text" ng-model="color.b" value="{{ color.b }}" size="3"/>
+			</p>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</body>
+</html>
