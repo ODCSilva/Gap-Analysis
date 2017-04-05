@@ -7,8 +7,8 @@ $(document).ready(function () {
 		$.each(data, function (key, value) {
 			var domString = '<tr>'
 						  + '	<td>' + value.id + '</td>'
-						  + '	<td>' + value.first_name + '</td>'
-						  + '   <td>' + value.last_name + '</td>'
+						  + '	<td>' + value.firstName + '</td>'
+						  + '   <td>' + value.lastName + '</td>'
 						  + '</tr>';
 
 			$('#peopleTable').append(domString);
